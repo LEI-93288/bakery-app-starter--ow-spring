@@ -15,20 +15,32 @@ import com.vaadin.starter.bakery.backend.service.UserService;
 import com.vaadin.starter.bakery.ui.MainView;
 
 /**
- * Spring boot web application initializer.
+ * A classe principal da aplicação Spring Boot.
+ * Esta classe serve como ponto de entrada para iniciar a aplicação.
  */
 @SpringBootApplication(scanBasePackageClasses = { SecurityConfiguration.class, MainView.class, Application.class,
-		UserService.class }, exclude = ErrorMvcAutoConfiguration.class)
+        UserService.class }, exclude = ErrorMvcAutoConfiguration.class)
 @EnableJpaRepositories(basePackageClasses = { UserRepository.class })
 @EntityScan(basePackageClasses = { User.class })
 public class Application extends SpringBootServletInitializer {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-	}
+    /**
+     * O método principal que é o ponto de entrada da aplicação Spring Boot.
+     *
+     * @param args argumentos de linha de comando passados no início da aplicação.
+     */
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(Application.class);
-	}
+    /**
+     * Configura a aplicação para ser executada em um contêiner de servlet externo.
+     *
+     * @param application um builder para a {@link SpringApplication} e o {@code ApplicationContext}.
+     * @return o builder configurado.
+     */
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(Application.class);
+    }
 }
