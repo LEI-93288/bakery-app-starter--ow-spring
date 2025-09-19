@@ -2,6 +2,18 @@
 
 **This starter is not recommended for new Vaadin Flow applications. Instead, visit [start.vaadin.com](https://start.vaadin.com/) to configure and download a Vaadin project that reflects the current best practices.**
 
+---
+
+## Grupo
+
+**Nickname do grupo:** BestBakers
+
+## Membros do grupo
+- Joana Silva - nº 93288
+- Tomás Francisco - nº 123456
+- XPTO - nº 654321
+
+---
 
 # Running the Project in Development Mode
 
