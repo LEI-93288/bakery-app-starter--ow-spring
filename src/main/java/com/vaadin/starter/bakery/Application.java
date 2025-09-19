@@ -15,8 +15,8 @@ import com.vaadin.starter.bakery.backend.service.UserService;
 import com.vaadin.starter.bakery.ui.MainView;
 
 /**
- * A classe principal da aplicação Spring Boot.
- * Esta classe serve como ponto de entrada para iniciar a aplicação.
+ * A classe principal da  a aplicação Spring Boot.
+ * Esta classe serve como ponto de entrada para iniciar a aplicação..
  */
 @SpringBootApplication(scanBasePackageClasses = { SecurityConfiguration.class, MainView.class, Application.class,
         UserService.class }, exclude = ErrorMvcAutoConfiguration.class)

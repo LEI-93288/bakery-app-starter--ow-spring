@@ -1,8 +1,8 @@
 package com.vaadin.starter.bakery.backend.data;
 
 /**
- * Representa estatísticas relacionadas às entregas de pedidos,
- * incluindo entregas realizadas, pendentes e novos pedidos.
+ * Representa a estatísticas relacionadas às entregas de pedidos,
+ * incluindo entregas realizadas, pendentes e novos pedidos..
  */
 public class DeliveryStats {
 
