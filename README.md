@@ -10,8 +10,9 @@
 
 ## Membros do grupo
 - Joana Silva - nº 93288
+- Afonso Carolo - nº 99917
 - Tomás Francisco - nº 123456
-- XPTO - nº 654321
+- Afonso  - nº 654321
 
 ---
 
