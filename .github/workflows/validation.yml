@@ -24,11 +24,13 @@ jobs:
           java-version: '18'
           distribution: 'temurin'
       - name: Set TB License
+        env:
+          TBL: ${{ secrets.TB_LICENSE }}
         run: |
-          TBL=${{ secrets.TB_LICENSE }}
           [ -z "$TBL" ] && echo "No TB license provided" && exit 1
           mkdir -p ~/.vaadin/
-          echo '{"username":"'`echo $TBL | cut -d / -f1`'","proKey":"'`echo $TBL | cut -d / -f2`'"}' > ~/.vaadin/proKey          
+          echo '{"username":"'$(echo $TBL | cut -d / -f1)'","proKey":"'$(echo $TBL | cut -d / -f2)'"}' > ~/.vaadin/proKey
+      
       - uses: actions/cache@v4
         with:
           path: ~/.m2/repository
